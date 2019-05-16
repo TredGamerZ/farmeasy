@@ -4,8 +4,10 @@ import android.app.Application;
 import com.seethings.ClassifierPackage;
 
 import com.facebook.react.ReactApplication;
-import fr.greweb.reactnativeviewshot.RNViewShotPackage;
+import com.oblador.vectoricons.VectorIconsPackage;
+import com.horcrux.svg.SvgPackage;
 import org.reactnative.camera.RNCameraPackage;
+import fr.greweb.reactnativeviewshot.RNViewShotPackage;
 import com.facebook.react.ReactNativeHost;
 import com.facebook.react.ReactPackage;
 import com.facebook.react.shell.MainReactPackage;
@@ -26,8 +28,11 @@ public class MainApplication extends Application implements ReactApplication {
     protected List<ReactPackage> getPackages() {
       return Arrays.<ReactPackage>asList(
           new MainReactPackage(),
+            new VectorIconsPackage(),
+            new SvgPackage(),
+            new RNCameraPackage(),
             new RNViewShotPackage(),
-          new RNCameraPackage(),
+
           new ClassifierPackage()
       );
     }
