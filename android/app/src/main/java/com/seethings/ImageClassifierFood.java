@@ -37,7 +37,7 @@ public class ImageClassifierFood {
   private static final String MODEL_PATH = "final.tflite";
 
   /** Name of the label file stored in Assets. */
-  private static final String LABEL_PATH = "food_labels.txt";
+  private static final String LABEL_PATH = "labels.txt";
 
   /** Number of results to show in the UI. */
   private static final int RESULTS_TO_SHOW = 5;

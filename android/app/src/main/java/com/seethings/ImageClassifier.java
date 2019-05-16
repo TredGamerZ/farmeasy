@@ -34,7 +34,7 @@ public class ImageClassifier {
   private static final String TAG = "See Things";
 
   /** Name of the model file stored in Assets. */
-  private static final String MODEL_PATH = "model2_quant.tflite";
+  private static final String MODEL_PATH = "final.tflite";
 
   /** Name of the label file stored in Assets. */
   private static final String LABEL_PATH = "labels.txt";
