@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { NativeModules } from 'react-native';
-import { StyleSheet, Text, View, TouchableOpacity, TouchableHighlight } from 'react-native';
-import { Divider, Card } from 'react-native-elements';
+import { StyleSheet, ScrollView, Text, View, TouchableOpacity, TouchableHighlight } from 'react-native';
+import { Divider, Card, Button, Icon } from 'react-native-elements';
 
 class learnScreen extends Component {
     static navigationOptions = {
@@ -17,23 +17,57 @@ class learnScreen extends Component {
                 </Text>
                 <Divider></Divider>
 
-                <View style={{ flex: 2, margin: '8%' }}>
-                    <Text style={styles.ptext}>Welcome to FarmEasy learning repository. </Text>
-                </View>
-
-                <Card
-                    title='HELLO WORLD'
-                    image={{ uri: 's2' }}>
-                    <Text style={{ marginBottom: 10 }}>
-                        The idea with React Native Elements is more about component structure than actual design.
+                <ScrollView style={{ flex: 1 }}>
+                    <View style={{ margin: '8%' }}>
+                        <Text style={styles.ptext}>Welcome to FarmEasy learning repository. </Text>
+                    </View>
+                    <Card
+                        title='Bacterial Spot | Bell Pepper | Xanthomonas campestris '
+                        image={{ uri: 's2' }}
+                        containerStyle={{ borderRadius: 10 }}
+                    >
+                        <Text style={{ marginBottom: 20, marginTop: 20, fontSize: 16 }}>
+                            Bacterial spot on pepper is caused by the bacterium <Text style={{ fontStyle: 'italic', fontWeight: 'bold' }}>Xanthomonas campestris pv. vesicatoria.</Text> Warm and humid conditions favor the disease.
+                            The disease organism can be spread by rain or during overhead irrigation.
                       </Text>
-                    <Button
-                        icon={<Icon name='code' color='#ffffff' />}
-                        backgroundColor='#03A9F4'
-                        buttonStyle={{ borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0 }}
-                        title='VIEW NOW' />
-                </Card >
-            </View>
+                        <Button
+                            icon={<Icon name='code' color='#ffffff' />}
+                            backgroundColor='#5AC46F'
+                            buttonStyle={{ borderRadius: 10, marginLeft: 0, marginRight: 0, marginBottom: 0., backgroundColor: '#5AC46F' }}
+                            title='Learn More' />
+                    </Card >
+                    <Card
+                        title='Early Blight | Potato | Alternaria solani'
+                        image={{ uri: 's2' }}
+                        containerStyle={{ borderRadius: 10 }}
+                    >
+                        <Text style={{ marginBottom: 20, marginTop: 20, fontSize: 16 }}>
+                            Early blight of potato is caused by the fungus, <Text style={{ fontStyle: 'italic', fontWeight: 'bold' }}>Alternaria solani</Text>, which can cause disease in potato, tomato, other members of the potato family, and some mustards. This disease, also known as target spot, rarely affects young, vigorously growing plants. It is found on older leaves first. Early blight is favored by warm temperatures and high humidity.
+                      </Text>
+                        <Button
+                            icon={<Icon name='code' color='#ffffff' />}
+                            backgroundColor='#5AC46F'
+                            buttonStyle={{ borderRadius: 10, marginLeft: 0, marginRight: 0, marginBottom: 0., backgroundColor: '#5AC46F' }}
+                            title='Learn More' />
+                    </Card >
+                    <Card
+                        title='Late Blight | Potato | Phytophthora infestans'
+                        image={{ uri: 's2' }}
+                        containerStyle={{ borderRadius: 10, marginBottom: 20 }}
+                    >
+                        <Text style={{ marginBottom: 20, marginTop: 20, fontSize: 16 }}>
+                            Late blight of potato is a serious disease caused by, <Text style={{ fontStyle: 'italic', fontWeight: 'bold' }}>Phytophthora infestans</Text>, It affects potato, tomato and, occasionally, eggplant and other members of the potato family. Late blight is the worst potato disease.
+                      </Text>
+                        <Button
+                            icon={<Icon name='code' color='#ffffff' />}
+                            backgroundColor='#5AC46F'
+                            buttonStyle={{ borderRadius: 10, marginLeft: 0, marginRight: 0, marginBottom: 0., backgroundColor: '#5AC46F' }}
+                            title='Learn More' />
+                    </Card >
+                </ScrollView>
+
+
+            </View >
 
 
         )

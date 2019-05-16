@@ -11,7 +11,9 @@ class homeScreen extends Component {
   }
   render() {
     return (<View style={styles.container}>
-      <Text style={styles.welcomeText}>FarmEasy</Text><Badge status="success" value="Beta"></Badge>
+
+      <Text style={styles.welcomeText}>FarmEasy<Text style={styles.welText}>.</Text></Text>
+
       {/* <Text style={styles.SupportText}>Shazam for Things.</Text> */}
       {/* <View style={{ flex: 3 }}>
         <Image

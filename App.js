@@ -8,6 +8,10 @@ import homeScreen from './app/screen/homescreen';
 import cameraScreen from './app/screen/camerascreen';
 import resultScreen from './app/screen/displayresult';
 import learnScreen from './app/screen/learnscreen';
+import searchScreen from './app/screen/searchscreen';
+import communityScreen from './app/screen/communityscreen';
+import helpScreen from './app/screen/helpscreen';
+
 import oldResultScreen from './app/screen/oldResults';
 import { createStackNavigator } from 'react-navigation';
 
@@ -24,6 +28,15 @@ export default createStackNavigator({
   },
   Learn: {
     screen: learnScreen
+  },
+  Search: {
+    screen: searchScreen
+  },
+  Community: {
+    screen: communityScreen
+  },
+  Help: {
+    screen: helpScreen
   },
   Old: {
     screen: oldResultScreen
