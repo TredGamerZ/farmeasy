@@ -68,7 +68,7 @@ class homeScreen extends Component {
 
             }}
             onPress={() => {
-              this.props.navigation.navigate('Camera');
+              this.props.navigation.navigate('Search');
             }}
           >
             <Image
@@ -99,7 +99,7 @@ class homeScreen extends Component {
 
             }}
             onPress={() => {
-              this.props.navigation.navigate('Camera');
+              this.props.navigation.navigate('Community');
             }
 
             }
@@ -131,7 +131,7 @@ class homeScreen extends Component {
 
             }}
             onPress={() => {
-              this.props.navigation.navigate('Camera');
+              this.props.navigation.navigate('Help');
             }}
           >
             <Image

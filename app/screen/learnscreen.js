@@ -23,7 +23,7 @@ class learnScreen extends Component {
                     </View>
                     <Card
                         title='Bacterial Spot | Bell Pepper | Xanthomonas campestris '
-                        image={{ uri: 's2' }}
+                        image={{ uri: 'bs' }}
                         containerStyle={{ borderRadius: 10 }}
                     >
                         <Text style={{ marginBottom: 20, marginTop: 20, fontSize: 16 }}>
@@ -38,7 +38,7 @@ class learnScreen extends Component {
                     </Card >
                     <Card
                         title='Early Blight | Potato | Alternaria solani'
-                        image={{ uri: 's2' }}
+                        image={{ uri: 'eb' }}
                         containerStyle={{ borderRadius: 10 }}
                     >
                         <Text style={{ marginBottom: 20, marginTop: 20, fontSize: 16 }}>
@@ -52,7 +52,7 @@ class learnScreen extends Component {
                     </Card >
                     <Card
                         title='Late Blight | Potato | Phytophthora infestans'
-                        image={{ uri: 's2' }}
+                        image={{ uri: 'lb' }}
                         containerStyle={{ borderRadius: 10, marginBottom: 20 }}
                     >
                         <Text style={{ marginBottom: 20, marginTop: 20, fontSize: 16 }}>
